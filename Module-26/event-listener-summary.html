@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Final Dom event Listeners </h1>
+    <button id="btn1">Handle Event by add addEventListeners</button>
+    <h3 id="cngText">Deafult Text</h3>
+
+    <input type="text" id="inputField">
+    <button id="inputBtn" class="btn">Show</button>
+    <p id="para"></p>
+
+
+
+
+    <script>
+        const btn = document.getElementById('btn1');
+        btn.classList.add('btn');
+
+        const changeText =()=>{
+            const cgText = document.getElementById('cngText');
+            cngText.innerHTML = "My name is Avinandan Roy, I am from Daffodil International University.Recently I'm learning JavaScript course ffrom jhankar mahbub programming hero course."
+        }
+        btn.addEventListener('click',changeText);
+
+        document.getElementById('inputBtn').addEventListener('click',()=>{
+            document.getElementById('para').textContent  =document.getElementById('inputField').value ;
+        })
+    </script>
+</body>
+</html>
