@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new Comment</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .first{
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .first p{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: justify;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="first" id="firstDiv">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsum
+        earum ab molestiae perferendis quis alias voluptatum? Mollitia,
+        accusantium? Exercitationem, cupiditate harum? Quam doloribus, libero
+        sed distinctio dicta minus commodi. Doloribus, exercitationem qui quidem
+        eum voluptatibus placeat delectus similique, provident quibusdam dicta a
+        molestias at illo sunt reprehenderit recusandae amet.
+      </p>
+
+      <p>
+        Porro, doloribus at unde ad necessitatibus ullam recusandae consequatur
+        cumque iste repellendus! Dolorem et dignissimos incidunt odit.
+        Asperiores voluptates expedita quo et pariatur alias ut recusandae?
+        Neque delectus, nostrum molestiae necessitatibus placeat ea ab accusamus
+        repudiandae. Mollitia suscipit repellat quaerat earum itaque vitae?
+        Quibusdam vitae ratione dolore dolores quis soluta.
+      </p>
+
+      <p>
+        Neque possimus dolorum placeat eos assumenda tempora error. Adipisci
+        aliquam, quidem, quaerat repudiandae obcaecati magnam quam debitis non
+        beatae enim necessitatibus? Voluptas aliquid ipsum, cum voluptate
+        consectetur obcaecati qui consequuntur alias reprehenderit non sunt
+        magni perferendis sit doloremque tempore sequi laboriosam praesentium
+        architecto facilis aperiam. Impedit eligendi esse quaerat tempora.
+      </p>
+    </div>
+    <div>
+        <textarea name="" id="newComment" cols="60" rows="5" ></textarea>
+        <br>
+        <button id="post" class="btn">Post</button>
+    </div>
+  </body>
+  <script>
+    document.getElementById('post').addEventListener('click',()=>{
+        const firstDiv = document.getElementById('firstDiv');
+        const p = document.createElement('p');
+        p.textContent = document.getElementById('newComment').value ;
+        firstDiv.appendChild(p);
+        document.getElementById('newComment').value ='';
+    })
+  </script>
+</html>
