@@ -5,10 +5,10 @@ document.getElementById('submititBtn').addEventListener("click",(event)=>{
     const userPass = document.getElementById('passwordGet').value ;
 
     if(userEmail === 'avinandan@gmail.com' && userPass === '1234'){
-        console.log("Verifying Your Password");
+        location.replace('../bank.html')
     }
     else{
-        alert("Enter valid E-mail and righ Password.")
+        alert("Areh...Beta ..! email id : avinandan@gmail.com ar password : 1234 ...Vul krle colbe na ...Taratari Dhuke por web site e ")
     }
 
 });
