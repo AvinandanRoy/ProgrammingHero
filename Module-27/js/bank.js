@@ -17,6 +17,7 @@ depositBtn.addEventListener('click',()=>{
     const preBalance = parseInt(balance.innerHTML);
     balance.innerHTML = preBalance + inputDeposit;
     deposit.innerHTML = parseInt(deposit.innerHTML)+inputDeposit;
+    document.getElementById('inputDeposit').value = '';
 })
 
 withdrawBtn.addEventListener("click",()=>{
@@ -25,4 +26,5 @@ withdrawBtn.addEventListener("click",()=>{
     const preBalance = parseInt(balance.innerHTML);
     balance.innerHTML = preBalance - inputCashOut;
     withdraw.innerHTML = parseInt(withdraw.innerHTML)+ inputCashOut;
+    document.getElementById('inputCashOut').value ='';
 })
