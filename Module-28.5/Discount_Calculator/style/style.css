@@ -1,0 +1,17 @@
+
+.buyBtn{
+    padding:10px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+}
+
+.inputField {
+    width: 250px;
+    padding: 10px 20px;
+    border: 1px solid magenta;
+    border-radius: 10px;
+}
