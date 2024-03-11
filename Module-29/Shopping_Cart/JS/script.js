@@ -52,7 +52,16 @@ p1IncreBtn.addEventListener('click',()=>{
     totalPrice();
 })
 
+// Decrement Buttton 
+const decreaseQuntatity =()=>{
+    const quantity = parseFloat(p1Quantity.innerHTML)-1 ;
+    return quantity;
+}
 
 p1DecreBtn.addEventListener('click',(event)=>{
-
+    p1Quantity.innerHTML = decreaseQuntatity();
+    increasePrice();
+    subTotals();
+    taxes();
+    totalPrice();
 })
