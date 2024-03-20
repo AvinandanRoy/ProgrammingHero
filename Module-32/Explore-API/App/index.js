@@ -22,7 +22,7 @@ const loadUsers =(url)=>{
     if(uniqueId <= 10){
         fetch(`${url+uniqueId}`)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => console.log(data.website))
     }
     else{
         console.log("More than 10 users data not found...!")
