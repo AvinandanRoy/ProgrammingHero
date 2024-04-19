@@ -1,4 +1,5 @@
 import './App.css'
+import ToDo from './ToDo';
 
 function App() {
   const name =  'Avinandan Roy'
@@ -16,9 +17,11 @@ function App() {
       <Device sname = 'Mobile' price = '15k'></Device>
       <Device sname = 'Apple Watch' price = '100k'></Device>
       <Device sname = "Play Station" price = '150k'></Device>
-      <Student name = 'Avinandan Roy' sid ='221-15-4899' age = '23' cgpa = '3.89'></Student>
 
-      <Student name = 'Pranta Roy' sid ='221-15-1111' age = '19' cgpa = '4.0'></Student>
+      <Student name = 'Avinandan Roy' sid ='221-15-4899' age = '23' cgpa = {3.89}></Student>
+      <Student name = 'Pranta Roy' sid ='221-15-1111' age = '19' ></Student>
+      <ToDo taskname='8.00' taskDetails='Wake up from the sleep.' isdone = 'false'></ToDo>
+      <ToDo taskname='10.00' taskDetails= 'Doing Breakfast with bread and JAm' isdone = 'true'></ToDo>
     </>
   )
 }
@@ -56,23 +59,23 @@ const Developer =()=>{
   );
 }
 
-const Device =(props) =>{
+const Device =({sname, price}) =>{
   // console.log(props)
   return(
     <div>
-      <h3>This Device is : {props.sname}</h3>
-      <h5>Price is : {props.price}</h5>
+      <h3>This Device is : {sname}</h3>
+      <h5>Price is : {price}</h5>
     </div>
   );
 }
 
-const Student =(props)=>{
+const Student =({name , sid , age ,cgpa = 5.999 })=>{
   return(
     <div className='student'>
-      <h3>Name : {props.name} </h3>
-      <h3>Student Id : {props.sid} </h3>
-      <h3>Age : {props.age} </h3>
-      <h3>Last Semester CGPA : {props.cgpa} </h3>
+      <h3>Name : {name} </h3>
+      <h3>Student Id : {sid} </h3>
+      <h3>Age : {age} </h3>
+      <h3>Last Semester CGPA : {cgpa} </h3>
     </div>
   )
 }

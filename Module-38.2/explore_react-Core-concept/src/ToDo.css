@@ -1,0 +1,18 @@
+.parent{
+    display: flex;
+    gap: 10px;
+}
+
+.first {
+    color: green;
+    opacity: .9;
+}
+
+.second {
+    color: black;
+    opacity: .6;
+}
+
+.last{
+    color: red;
+}
