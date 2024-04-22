@@ -1,6 +1,7 @@
 
 import './App.css'
 import Counter from './Counter'
+import Counter1 from './Counter1'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
 
 
       <Counter></Counter>
+      <Counter1></Counter1>
     </div>
   )
 }

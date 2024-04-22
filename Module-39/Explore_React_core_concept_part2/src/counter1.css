@@ -1,0 +1,34 @@
+
+
+.parent{
+    text-align: center;
+    max-width:300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.allButton{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.btn{
+    color: white;
+    background: blue;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 13px;
+}
+
+.counting{
+    max-width: 100px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    background: green;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+}
