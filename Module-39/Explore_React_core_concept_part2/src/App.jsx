@@ -2,6 +2,10 @@
 import './App.css'
 import Counter from './Counter'
 import Counter1 from './Counter1'
+import Friends from './Friends'
+import Team from './Team'
+import Team1 from './Team1'
+import UseEffect from './UseEffect'
 
 function App() {
 
@@ -31,6 +35,12 @@ function App() {
 
       <Counter></Counter>
       <Counter1></Counter1>
+      <Team></Team>
+
+      <Team1></Team1>
+      <UseEffect></UseEffect>
+
+      <Friends></Friends>
     </div>
   )
 }
